@@ -1,0 +1,10 @@
+<div class="card-container d-flex flex-wrap">
+    <div *ngFor="let item of dataArray" class="card shadow m-3">
+      <div class="card-header text-center">
+        <h1 class="card-title">{{item.titre}}</h1>
+      </div>
+      <div class="card-body">
+        <p>Description: {{ item.description }}</p>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,14 @@
+<div class="card-container d-flex flex-wrap">
+    <div *ngFor="let item of dataArray" class="card shadow m-3">
+      <div class="card-header">
+        <h3 class="card-title">{{ item.departureLocation }} to {{ item.destination }}</h3>
+      </div>
+      <div class="card-body">
+        <p>Departure Time: {{ item.departureTime }}</p>
+        <p>Arrival Time: {{ item.arrivalTime }}</p>
+        <p>Transport Type: {{ item.transportType }}</p>
+        <p>Price: {{ item.price }}</p>
+        <p>Available Seats: {{ item.availableSeats }} / {{ item.capacity }}</p>
+      </div>
+    </div>
+  </div>

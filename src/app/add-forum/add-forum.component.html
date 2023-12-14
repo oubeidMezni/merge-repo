@@ -1,0 +1,16 @@
+<div class="container my-5">
+    <h1 class="text-center">Ajouter Forum</h1>
+    <form (ngSubmit)="addForum()" #forumForm="ngForm">
+      <div class="form-group">
+        <label for="titre">Title:</label>
+        <input type="text" id="titre" class="form-control" name="titre" [(ngModel)]="newForum.titre" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea id="description" class="form-control" name="description" [(ngModel)]="newForum.description" required></textarea>
+      </div>
+      
+      <button type="submit" class="btn btn-primary">Add Forum</button>
+    </form>
+  </div>
