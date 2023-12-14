@@ -1,0 +1,40 @@
+<div class="background" >
+   
+    
+    <div class="container CustomerContainer">
+     
+        <div class="card custermercard w-100">
+            <div class="card-body w-100">
+                <table class="table table-striped w-100 ">
+                    <thead>
+                      <tr>
+                        <th scope="col">identifiant Reservation</th>
+                        <th scope="col">Reservation Date </th>
+                        <th scope="col">Location </th>
+                        <th scope="col">Status </th>
+                        <th>&nbsp;</th>
+                      </tr>
+                    </thead>
+                    <tbody *ngFor="let Reservation of listeReservation">
+                      <tr > 
+                        <th scope="row">{{Reservation.idReservation}}</th>
+                        <td>{{Reservation.reservationDateTime}}</td>
+                        <td>{{Reservation.location}}</td>
+                        <td>{{Reservation.rtype}}</td>
+                        <td style="width:20%;">
+                            
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+    
+            </div>
+          </div>
+       <router-outlet></router-outlet>
+          
+        </div>
+        
+    </div>
+
+    
+    

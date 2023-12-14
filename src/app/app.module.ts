@@ -14,6 +14,7 @@ import { TransportComponent } from './transport/transport.component';
 import { AddtransportationComponent } from './dashboard/addtransportation/addtransportation.component';
 import { GetforumsComponent } from './getforums/getforums.component';
 import { AddForumComponent } from './add-forum/add-forum.component';
+import { ListeReservationComponent } from './dashboard/liste-reservation/liste-reservation.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { AddForumComponent } from './add-forum/add-forum.component';
     TransportComponent,
     AddtransportationComponent,
     GetforumsComponent,
-    AddForumComponent
+    AddForumComponent,
+    ListeReservationComponent
   ],
   imports: [
     BrowserModule,

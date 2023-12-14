@@ -18,8 +18,7 @@ const routes: Routes = [
 },
 {
 
-  path:"addtransportation", component: AddtransportationComponent
-}
+  path:"addtransportation", component: AddtransportationComponent}
 ];
 
 @NgModule({
